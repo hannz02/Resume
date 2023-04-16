@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="Style.css" media="screen"/>
+</head>
+
+<body style="background-color:#f3bc77">
+    <div class="banner">
+	</div>
+    <div class="navbar">
+        <a href="Resume Page.htm">Home</a>
+        <div class="dropdown">
+            <button class="dropbtn" onclick="myFunction()">Academics
+              <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-content" id="myDropdown">
+              <a href="Year 1.html">Year 1</a>
+              <a href="Year 2.html">Year 2</a>
+              <a href="#">Year 3</a>
+            </div>
+        </div> 
+		<a href="Experience.htm">Experience</a>
+      </div>
+    <div class="normal">
+        <h1 style="background-color:#a55233; color:black; font-family:Lemon Jelly Personal Use; font-size:500%; text-align:center"><ins>First Year Student Experience!</ins></h1>
+            <h2 class="dotted"; style = "font-size:200%">Semester 1 : The start of a rollercoaster ride!</h2> 
+                <p> My Year 1 was a little special from others because I started this course online, all was very new to me, despite all these, I still managed to finish it with style, semester 1 was a little hard on me because I was still new, but that is no reason for me to give up there.<p>
+                <p> The style I was talking about was that I still managed to get certifications for the courses I attended through out the semester, the certifications below are proof that I managed to survive through the semester online.<p>
+					<p><b>The new skills I learnt: </b><p>
+						<table style="width:100%">
+							<tr style="background-color: #a55233;">
+								<th>Modules</th>
+								<th>Tools</th>
+								<th>Languages</th>
+							</tr>
+							<tr>
+								<th>Introduction to Networking</th>
+								<th>Cisco Packet Tracer</th>
+								<th>-</th>
+							</tr>
+							<tr>
+								<th>Programming with Python</th>
+								<th>IDLE Python</th>
+								<th>Python</th>
+							</tr>
+						</table>
+                    <h3><b><ins>Hall of Fame</ins></b></h3>
+                        <img src="Images/IN Cert.JPG" alt = "There was a cert here a minute ago" style = "float:middle;max-width:100%;height:400px;"></img>
+                        <p style="text-align:center"> The cert I got from CISCO for completing the course successfully!</p>
+                        <br></br>
+                        <img src="Images/IACD Cert.JPG" alt = "There was a cert here a minute ago" style = "float:middle;max-width:100%;height:400px"></img>
+                        <p style="text-align:center"> The cert I got from IACD for completing the course successfully!</p>
+            <h2 class="dotted"; style = "font-size:200%">Semester 2 : When the rollercoaster ride is going up!</h2>
+                <p> Semester 2 was like my first semester being physical around the school, there were some adjustments that I had to make so that I would fit in better, not only the environment, but the courses as well as I am moving from Penang to Kuala Lumpur to attend the classes physically.</p>
+                <p> I finished all my courses as well but I decided to go and compete for my first hackathon, although I didn't place in the competition, I do think that this is a great experience for me as I go to know what to expect in such competitions.</p>
+				<p><b>The new skills I learnt: </b><p>
+					<table style="width:100%">
+						<tr style="background-color: #a55233;">
+							<th>Modules</th>
+							<th>Tools</th>
+							<th>Languages</th>
+						</tr>
+						<tr>
+							<th>Introduction to Artificial Intelligence</th>
+							<th>Microsoft Power Agent Tool</th>
+							<th>-</th>
+						</tr>
+						<tr>
+							<th>Introduction to C Programming</th>
+							<th>CodeBlocks</th>
+							<th>C Programming</th>
+						</tr>
+						<tr>
+							<th>Introduction to Databases</th>
+							<th>Microsoft SQL Server Management Studio 18</th>
+							<th>SQL</th>
+						</tr>
+					</table>
+                    <h3><b><ins>Hall of Fame</ins></b></h3>
+                    <img src="Images/Hackathon Cert.JPG" alt = "There was a cert here a minute ago" style = "float:middle;max-width:100%;height:400px;"></img>
+                        <p style="text-align:center"> The cert I got from Inti PPKomp 2022 for completing the competition successfully!</p>
+            <h2 class="dotted"; style = "font-size:200%">In conclusion</h2>
+                <p> It was indeed a joyride, being able to transit from fully online classes to attending the classes physically, I indeed learned a lot from my lectures and friends no matter academically or socially!</p>
+                    <h3><b><ins>The final result of year 1</ins></b></h3>
+                    <img src="Images/Year 1.JPG" alt = "There was my results here a minute ago" style = "float:middle;max-width:100%;height:400px;"></img>	
+                    <p style="text-align:center"> Despite all the fun I had throughout the year, I still managed to maintain my results at 3.48, I don't think I am the best for it, but I tried my best and I will continue to strive for a better tomorrow!</p>
+
+    </div>
+</body>
+
+<!-- Functions
+Function 1: To create the dropdown content that shows and hides when the users click on the button -->
+<script>
+	//<!-- To show the content when users click on it -->
+	function myFunction() {
+	  document.getElementById("myDropdown").classList.toggle("show");
+	}
+	//Close when the user clicks outside of it
+	window.onclick = function(e) {
+	  if (!e.target.matches('.dropbtn')) {
+	  var myDropdown = document.getElementById("myDropdown");
+		if (myDropdown.classList.contains('show')) {
+		  myDropdown.classList.remove('show');
+		}
+	  }
+	}
+</script>
+
+</html>

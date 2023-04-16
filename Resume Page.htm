@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="Style.css" media="screen"/>
+</head>
+<body style="background-color:#f3bc77">
+	<div class="banner">
+	</div>
+	<div class="navbar">
+	  <a href="Resume Page.htm">Home</a>
+	  <div class="dropdown">
+		  <button class="dropbtn" onclick="Academics()">Academics
+			<i class="fa fa-caret-down"></i>
+		  </button>
+		  <div class="dropdown-content" id="myDropdown">
+			<a href="Year 1.html">Year 1</a>
+			<a href="Year 2.html">Year 2</a>
+			<a href="Year 3.html">Year 3</a>
+		  </div>
+	  </div> 
+	  <div class="dropdown">
+		<button class="dropbtn" onclick="Experience()">Experience
+		  <i class="fa fa-caret-down"></i>
+		</button>
+		<div class="dropdown-content" id="ExperiencesDropdown">
+		  <a href="CS Tuition Centre.html">CS Tuition Centre Sdn Bhd</a>
+		</div>
+	</div> 
+	</div>
+	<div class="normal">
+	<h1 style="background-color:#a55233; color:black; font-family:Lemon Jelly Personal Use; font-size:500%; text-align:center"><ins>All about me :)</ins></h1>
+	<h1 style="font-size:200%;"> A little introduction before we begin shall we?</h1> 
+		<img src="Images/Picture.jpeg" alt = "Kor Yu Hann was here" style = "float:middle;max-width:100%;height:400px;">
+		<p> The person above, ya, that's me right there, the name I was given with is Kor Yu Hann, I'm currently 21, one would say that this is the prime year for a person, I couldn't agree more. Througout these 21 years, I learned a lot about life, I'm not saying that I am the best because of this, I am still striving for the best of course, what I am trying to say is that I learned a lot to become the person I am today, I do have my flaws, and these flaws are what prepared me to face what I am about to face in the future. </h1>
+
+		<h2 style="font-size:100%; text-align:center;">Normally where the magic happens ;)</h2>
+			<hr>
+			<p>This is something about myself throughout the years in learning Data Analytics.</p>
+				<img src="Images/APU.jpg" alt="Asia Pacific University of Technology and Innovation (APU)" style="float:middle;max-width:100%;height:400px;">
+					<p>This instituition above, yeah, this is the university that I go to for my degree program. It's a computing school, although it looks small on the outside but trust me, it provides me more than enough to prepare me for this field.</p>
+			<h3 style="font-size:100%;"><ins>Click on any to learn more about my three-years-journey here!</ins></h3>
+				<script>
+				
+			</script>
+				<button class="buttons"; onclick="GoToWebsite(1)">Year 1 journey</button>
+				<button class="buttons"; onclick="GoToWebsite(2)">Year 2 journey</button>
+				<button class="buttons"; onclick="GoToWebsite(3)">Year 3 journey</button>
+	</div>
+</body>
+<!-- Functions
+Function 1: To create the dropdown content that shows and hides when the users click on the button -->
+<script>
+//<!-- To show the content when users click on it -->
+function Academics() {
+  document.getElementById("myDropdown").classList.toggle("show");
+}
+//Close when the user clicks outside of it
+window.onclick = function(e) {
+  if (!e.target.matches('.dropbtn')) {
+  var myDropdown = document.getElementById("myDropdown");
+    if (myDropdown.classList.contains('show')) {
+      myDropdown.classList.remove('show');
+    }
+  }
+}
+
+//<!-- To show the content when users click on it -->
+function Experience() {
+  document.getElementById("ExperiencesDropdown").classList.toggle("show");
+}
+//Close when the user clicks outside of it
+window.onclick = function(e) {
+  if (!e.target.matches('.dropbtn')) {
+  var myDropdown = document.getElementById("ExperiencesDropdown");
+    if (myDropdown.classList.contains('show')) {
+      myDropdown.classList.remove('show');
+    }
+  }
+}
+
+/* Function 2: To click on the button to go to another page */
+function GoToWebsite(parameter){
+					if(parameter == 1){
+						location.replace("Year 1.html")
+					}
+					else if(parameter == 2){
+						location.replace("Year 2.html")
+					}
+					else{
+						location.replace("Year 3.html")
+				}
+}
+</script>
+</html>
