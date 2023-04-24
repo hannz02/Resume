@@ -70,6 +70,20 @@ Function 1: To create the dropdown content that shows and hides when the users c
 		}
 	  }
 	}
+	
+	//<!-- To show the content when users click on it -->
+	function Experience() {
+	  document.getElementById("ExperiencesDropdown").classList.toggle("show");
+	}
+	//Close when the user clicks outside of it
+	window.onclick = function(e) {
+	  if (!e.target.matches('.dropbtn')) {
+	  var myDropdown = document.getElementById("ExperiencesDropdown");
+	    if (myDropdown.classList.contains('show')) {
+	      myDropdown.classList.remove('show');
+	    }
+	  }
+	}
 </script>
 
 </html>
